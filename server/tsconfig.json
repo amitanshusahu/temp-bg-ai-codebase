@@ -27,7 +27,7 @@
       "@controllers/*": ["controllers/*"],
       "@services/*": ["services/*"],
       "@middlewares/*": ["middlewares/*"],
-      "@config/*": ["config/*"],
+      "@config": ["config/index"],
       "@types/*": ["types/*"]
     },
 

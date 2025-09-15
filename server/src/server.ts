@@ -1,5 +1,6 @@
 import { app } from "./app";
+import { config } from "@config";
 
-app.listen(3000, () => {
+app.listen(config.app.port, () => {
   console.log("server is running on port 3000")
 })

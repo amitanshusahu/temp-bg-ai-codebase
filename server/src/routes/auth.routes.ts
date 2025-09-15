@@ -1,9 +1,8 @@
+import { loginController } from "@/controllers/auth.controller";
 import { Router } from "express";
 
 const router = Router();
 
-import { healthCheck } from '@controllers/user.controller'
-
-router.get("/health", healthCheck)
+router.get("/login", loginController)
 
 export default router
