@@ -15,6 +15,7 @@ import {
   LuBriefcase,
   LuStar,
 } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Landing page component for a learning‑management website.
@@ -184,6 +185,8 @@ const Landing2: React.FC = () => {
       highlight: false,
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="font-sans text-gray-900">
@@ -601,7 +604,7 @@ const Landing2: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className="container mx-auto px-6 mt-8 border-t border-gray-700 pt-4 text-center text-sm">
+        <div className="container mx-auto px-6 mt-8 border-t border-gray-700 pt-4 text-center text-sm" onClick={() => navigate("/3")}>
           © {new Date().getFullYear()} LearnConnect. All rights reserved.
         </div>
       </footer>
