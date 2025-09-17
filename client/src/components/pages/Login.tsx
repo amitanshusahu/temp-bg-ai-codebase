@@ -3,7 +3,7 @@ import type { LoginRequestParams } from "../../types/zod"
 import api from "../../lib/axios/axios"
 import { API_ROUTES } from "../../lib/api"
 import { useEffect, useState } from "react"
-import { Eye, EyeClosed, Mail, Lock, CircleArrowRight } from "lucide-react"
+import { Eye, EyeClosed, Mail, Lock } from "lucide-react"
 import type { Response } from "../../types"
 import { userStore } from "../../state/global"
 import { useNavigate } from "react-router-dom"
@@ -130,34 +130,6 @@ export default function Login() {
               {loginMutation.isPending ? "Signing in..." : "Sign in"}
             </button>
           </form>
-
-          <div className="mt-8">
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300"></div>
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">Or continue with</span>
-              </div>
-            </div>
-
-            <div className="mt-4 grid grid-cols-2 gap-3">
-              <button
-                type="button"
-                className="inline-flex justify-center items-center space-x-2 py-2 px-4 bg-white border border-gray-300 rounded-lg shadow-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-              >
-                <CircleArrowRight size={20} className="text-red-500" />
-                <span>Google</span>
-              </button>
-              <button
-                type="button"
-                className="inline-flex justify-center items-center space-x-2 py-2 px-4 bg-white border border-gray-300 rounded-lg shadow-sm text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
-              >
-                <CircleArrowRight size={20} className="text-gray-800" />
-                <span>GitHub</span>
-              </button>
-            </div>
-          </div>
 
           <div className="mt-8 text-center">
             <p className="text-gray-600">
