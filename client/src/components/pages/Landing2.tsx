@@ -222,10 +222,10 @@ const Landing2: React.FC = () => {
         {/* Hero / Connecting Talent */}
         <section
           id="home"
-          className="relative h-[500px] flex items-center justify-center"
+          className="relative h-[70vh] flex items-center justify-center"
         >
           <img
-            src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5d?auto=format&fit=crop&w=1600&q=80"
+            src="https://cdn.dribbble.com/userupload/13933073/file/original-f8f01427f27c84117a94884345815ff5.jpg?resize=1600x1200&vertical=center"
             alt="Remote team collaboration via video conference"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -238,7 +238,7 @@ const Landing2: React.FC = () => {
             <p className="text-white/90 text-lg md:text-xl mb-6">
               Empower your workforce and yourself with a comprehensive learning
               management system.  Manage courses, automate onboarding and reach
-              learners anywhere with flexible, mobile‑friendly training【816879969952673†L589-L599】.
+              learners anywhere with flexible, mobile‑friendly training.
             </p>
             <a
               href="#products"
